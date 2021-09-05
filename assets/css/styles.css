@@ -115,15 +115,33 @@ header nav ul li a:hover {
   padding-bottom: 20px;
 }
 
-.about-me p {
-  margin: 0 20px;
-  padding: 5px 0 0 20px;
+.about-me-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-me img {
+  margin: 10px 10px 0 10px;
+  width: 30%;
+  flex: 1 40%;
+  border: 4px solid var(--red);
+}
+
+.about-me-para {
+  flex: 1 60%;
+  margin: 10px 10px 0 10px;
+  padding: 0 5px;
   text-align: center;
   line-height: 1.2;
   font-size: 20px;
-  background-color: #e6e6e6;
+  background-color: var(--white);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
   border-radius: 3px;
+}
+
+.about-me-para p {
+  padding: 5px 0;
 }
 
 /* deployed works section */
@@ -271,6 +289,10 @@ header nav ul li a:hover {
   .discord-bot,
   .placeholder {
     flex: 100%;
+  }
+
+  .about-me-box {
+    flex-wrap: wrap;
   }
 }
 
