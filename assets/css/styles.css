@@ -1,5 +1,5 @@
 :root {
-  --white: #FFFFFF;
+  --white: #e6e6e6;
   --black: #000000;
   --red: #F6446E;
 }
@@ -13,13 +13,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.section-title {
-  margin: 20px 10px;
-  text-align: center;
-  font-size: 25px;
-  border-bottom: 2px solid var(--red);
-}
-
+/* header */
 header {
   background-image: url("../images/black-white-topography-map-mugs.jpg");
   background-size: cover;
@@ -34,7 +28,7 @@ header {
 
 header h1 {
   margin: auto 0;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.5;
 }
 
@@ -62,7 +56,7 @@ header nav ul li a {
   color: var(--white);
   text-decoration: none;
   padding: 0 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 header nav ul li a:hover {
@@ -70,8 +64,24 @@ header nav ul li a:hover {
   padding: 3px;
   background-color: var(--white);
   color: var(--black);
+  border-radius: 3px;
 }
 
+/* reused sectiob title */
+.section-title {
+  padding: 0 10px 5px 10px;
+  text-align: left;
+  font-size: 25px;
+  border-bottom: 2px solid var(--red);
+  padding-top: 5px;
+  background-image: url(../images/black-white-topography-map-mugs-invert.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+/* hero/logo */
 .hero {
   background-image: url("../images/black-white-topography-map-mugs.jpg");
   background-size: cover;
@@ -83,7 +93,7 @@ header nav ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .hero-img h2 {
@@ -95,32 +105,64 @@ header nav ul li a:hover {
   font-size: 75px;
 }
 
-.about-me p {
-  padding: 0 20px;
-  text-align: center;
-  line-height: 1.2;
+/* about me section */
+.about-me {
+  background-image: url(../images/black-white-topography-map-mugs-invert.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  padding-bottom: 20px;
 }
 
+.about-me p {
+  margin: 0 20px;
+  padding: 5px 0 0 20px;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 20px;
+  background-color: #e6e6e6;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  border-radius: 3px;
+}
+
+/* deployed works section */
 .work-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-image: url(../images/black-white-topography-map-mugs-invert.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  padding-bottom: 20px;
 }
 
 .run-buddy,
-.placeholder {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
-  height: 25vh;
+.placeholder,
+.discord-bot {
+  height: 200px;
   margin: 10px;
   border: 4px solid var(--red);
   position: relative;
+  transition: top ease 0.5s;
+  border-radius: 3px;
+}
+
+.run-buddy:hover,
+.placeholder:hover,
+.discord-bot:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  top: -5px;
 }
 
 .run-buddy {
   flex: 100%;
 }
 
+.discord-bot,
 .placeholder {
   flex: 1 40%;
 }
@@ -131,6 +173,7 @@ header nav ul li a:hover {
   background-image: url(../images/Screenshot.png);
   background-position: top left;
   position: relative;
+  border-radius: 3px;
 }
 
 .placeholder-img {
@@ -141,8 +184,18 @@ header nav ul li a:hover {
   position: relative;
 }
 
+.discord-bot-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/discord-feature-graphic.png);
+  background-position: center;
+  position: relative;
+}
+
+
 .run-buddy-img a,
-.placeholder-img a {
+.placeholder-img a,
+.discord-bot a {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -156,6 +209,7 @@ header nav ul li a:hover {
   left: 0;
   background-color: var(--red);
   width: 118px;
+  border-radius: 3px;
 }
 
 .textarea h4 {
@@ -166,4 +220,94 @@ header nav ul li a:hover {
   font-size: 15px;
 }
 
+/* contact section */
+.contact-links ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 10px 20px 10px;
+  text-decoration: none;
+  background-image: url(../images/black-white-topography-map-mugs-invert.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
 
+.contact-links ul li {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  list-style: none;
+  padding: 5px;
+  transition: top ease 0.5s;
+}
+
+.contact-links ul li a {
+  position: relative;
+  text-decoration: underline;
+  color: var(--black);
+  padding: 5px;
+  transition: top ease 0.5s;
+}
+
+.contact-links ul li a:hover {
+  background-color: var(--red);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.contact-links ul li:hover {
+  background-color: var(--red);
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
+  top: -5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .run-buddy,
+  .discord-bot,
+  .placeholder {
+    flex: 100%;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  .contact-links ul {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contact-links ul li,
+  .contact-links ul li a {
+    flex: 1 50%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .contact-links ul li,
+  .contact-links ul li a {
+    flex: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    padding: 10px 50px;
+  }
+
+  header h1 {
+    flex: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    align-items: center;
+    justify-content: space-around;
+    flex: 100%;
+  }
+}
