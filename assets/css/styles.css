@@ -141,7 +141,7 @@ header nav ul li a:hover {
 }
 
 .run-buddy,
-.placeholder,
+.robot-gladiators,
 .discord-bot {
   height: 200px;
   margin: 10px;
@@ -152,7 +152,7 @@ header nav ul li a:hover {
 }
 
 .run-buddy:hover,
-.placeholder:hover,
+.robot-gladiators:hover,
 .discord-bot:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
   top: -5px;
@@ -163,7 +163,7 @@ header nav ul li a:hover {
 }
 
 .discord-bot,
-.placeholder {
+.robot-gladiators {
   flex: 1 40%;
 }
 
@@ -176,11 +176,11 @@ header nav ul li a:hover {
   border-radius: 3px;
 }
 
-.placeholder-img {
+.robot-gladiators-img {
   height: 100%;
   width: 100%;
-  background-image: url(../images/Screenshot.png);
-  background-position: top left;
+  background-image: url(../images/istockphoto-470975540-612x612.png);
+  background-position: center;
   position: relative;
 }
 
@@ -194,21 +194,21 @@ header nav ul li a:hover {
 
 
 .run-buddy-img a,
-.placeholder-img a,
-.discord-bot a {
+.robot-gladiators-img a,
+.discord-bot-img a {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
 .textarea {
+  padding: 5px 5px 0 0;
   color: var(--black);
   text-decoration: none;
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: var(--red);
-  width: 118px;
   border-radius: 3px;
 }
 
@@ -309,5 +309,12 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: space-around;
     flex: 100%;
+  }
+}
+
+@media only screen and (max-width: 339px) {
+  header nav ul li {
+    flex: 1 50%;
+    text-align: center;
   }
 }
