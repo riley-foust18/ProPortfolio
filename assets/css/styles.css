@@ -160,7 +160,7 @@ header nav ul li a:hover {
 
 .run-buddy,
 .robot-gladiators,
-.discord-bot {
+.password-app {
   height: 200px;
   margin: 10px;
   border: 4px solid var(--red);
@@ -171,7 +171,7 @@ header nav ul li a:hover {
 
 .run-buddy:hover,
 .robot-gladiators:hover,
-.discord-bot:hover {
+.password-app:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
   top: -5px;
 }
@@ -180,7 +180,7 @@ header nav ul li a:hover {
   flex: 100%;
 }
 
-.discord-bot,
+.password-app,
 .robot-gladiators {
   flex: 1 40%;
 }
@@ -202,7 +202,7 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.discord-bot-img {
+.password-app {
   height: 100%;
   width: 100%;
   background-image: url(../images/discord-feature-graphic.png);
