@@ -161,7 +161,8 @@ header nav ul li a:hover {
 .run-buddy,
 .robot-gladiators,
 .password-app,
-.note-taker {
+.note-taker,
+.weather-buddy {
   height: 200px;
   margin: 10px;
   border: 4px solid var(--red);
@@ -173,7 +174,8 @@ header nav ul li a:hover {
 .run-buddy:hover,
 .robot-gladiators:hover,
 .password-app:hover,
-.note-taker:hover {
+.note-taker:hover,
+.weather-buddy:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
   top: -5px;
 }
@@ -184,7 +186,8 @@ header nav ul li a:hover {
 
 .password-app,
 .robot-gladiators,
-note-taker {
+.note-taker,
+.weather-buddy {
   flex: 1 40%;
 }
 
@@ -221,9 +224,19 @@ note-taker {
   position: relative;
 }
 
+.weather-buddy-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/weather-buddy.png);
+  background-position: center;
+  position: relative;
+}
+
 .run-buddy-img a,
 .robot-gladiators-img a,
-.discord-bot-img a {
+.password-app-img a,
+.note-taker-img a,
+.weather-buddy-img a {
   position: absolute;
   height: 100%;
   width: 100%;
