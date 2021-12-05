@@ -158,8 +158,13 @@ header nav ul li a:hover {
   padding-bottom: 20px;
 }
 
-.box-primary,
-.box-secondary {
+.run-buddy,
+.robot-gladiators,
+.password-app,
+.note-taker,
+.weather-buddy,
+.dinner-guru,
+.heroverse {
   height: 200px;
   margin: 10px;
   border: 4px solid var(--red);
@@ -168,17 +173,27 @@ header nav ul li a:hover {
   border-radius: 3px;
 }
 
-.box-primary:hover,
-.box-secondary:hover {
+.run-buddy:hover,
+.robot-gladiators:hover,
+.password-app:hover,
+.note-taker:hover,
+.weather-buddy:hover,
+.dinner-guru:hover,
+.heroverse:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
   top: -5px;
 }
 
-.box-primary {
+.run-buddy {
   flex: 100%;
 }
 
-.box-secondary {
+.password-app,
+.robot-gladiators,
+.note-taker,
+.weather-buddy,
+.dinner-guru,
+.heroverse {
   flex: 1 40%;
 }
 
@@ -199,10 +214,18 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.discord-bot-img {
+.password-app-img {
   height: 100%;
   width: 100%;
-  background-image: url(../images/discord-feature-graphic.png);
+  background-image: url(../images/20210912.png);
+  background-position: center;
+  position: relative;
+}
+
+.note-taker-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/note-taker.png);
   background-position: center;
   position: relative;
 }
@@ -211,14 +234,28 @@ header nav ul li a:hover {
   height: 100%;
   width: 100%;
   background-image: url(../images/dinner-guru-logo.png);
+}
+
+.heroverse-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/heroverselogo.png);
+}
+
+.weather-buddy-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/weather-buddy.png);
   background-position: center;
   position: relative;
 }
 
 .run-buddy-img a,
 .robot-gladiators-img a,
-.discord-bot-img a,
-.dinner-guru-img a {
+.dinner-guru-img a,
+.password-app-img a,
+.note-taker-img a,
+.weather-buddy-img a {
   position: absolute;
   height: 100%;
   width: 100%;
