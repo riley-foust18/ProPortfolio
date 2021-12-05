@@ -158,9 +158,8 @@ header nav ul li a:hover {
   padding-bottom: 20px;
 }
 
-.run-buddy,
-.robot-gladiators,
-.discord-bot {
+.box-primary,
+.box-secondary {
   height: 200px;
   margin: 10px;
   border: 4px solid var(--red);
@@ -169,19 +168,17 @@ header nav ul li a:hover {
   border-radius: 3px;
 }
 
-.run-buddy:hover,
-.robot-gladiators:hover,
-.discord-bot:hover {
+.box-primary:hover,
+.box-secondary:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
   top: -5px;
 }
 
-.run-buddy {
+.box-primary {
   flex: 100%;
 }
 
-.discord-bot,
-.robot-gladiators {
+.box-secondary {
   flex: 1 40%;
 }
 
@@ -210,10 +207,18 @@ header nav ul li a:hover {
   position: relative;
 }
 
+.dinner-guru-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/dinner-guru-logo.png);
+  background-position: center;
+  position: relative;
+}
 
 .run-buddy-img a,
 .robot-gladiators-img a,
-.discord-bot-img a {
+.discord-bot-img a,
+.dinner-guru-img a {
   position: absolute;
   height: 100%;
   width: 100%;
